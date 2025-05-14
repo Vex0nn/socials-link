@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Font;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+} 
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Font;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 340px;
+    background-color: hsl(0, 0%, 12%);
+    gap: 20px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.name {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.location {
+    color: hsl(75, 94%, 57%);
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.bio {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.socialsCont {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 0.8em;
+    width: 263;
+    padding: 12px 80px 12px 80px;
+    transition: all 0.2s ease-in-out;
+}
+
+.socials:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 25%);
+}
+
+@media only screen and (max-width: 450px) {
+    main {
+        width: 290px;
+    }
+    .bio {
+        font-size: 0.75em;
+    }
+    .socials {
+        width: 240px;
+    }
+}
